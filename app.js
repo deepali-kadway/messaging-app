@@ -8,7 +8,7 @@ const clearChat = document.querySelector('.clear-chat-btn')
 
 // create a funtion that will return a message element
 const createChatMessageElement = (message) => `
-<div class="message ${message.sender === 'Shawna' ? 'blue-bg' : 'gray-bg'}">
+<div class="message ${message.sender === 'Shawna' ? 'message-right blue-bg' : 'message-left gray-bg'}">
     <div class="message-sender">${message.sender}</div>
     <div class="message-text">${message.text}</div>
     <div class="message-timestamp">${message.timestamp}</div>
